@@ -1,0 +1,53 @@
+@use './variables.scss' as *;
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+	font-size: 1.6rem;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	height: 10rem;
+}
+@media only screen and (max-width: 750px) {
+	.logo {
+		height: 7rem;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $color-dark;
+
+	&.active {
+		color: $color-dark;
+	}
+}
+
+.btn {
+	padding: 1.5rem 2rem;
+	font-family: 'Courier New', Courier, monospace;
+	border: none;
+	border-radius: 0.6rem;
+	color: $color-white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	a {
+		color: $color-white;
+		&.active {
+			color: $color-white;
+		}
+	}
+
+	&-primary {
+		background-color: $color-primary;
+	}
+}

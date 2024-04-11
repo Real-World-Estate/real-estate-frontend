@@ -1,0 +1,33 @@
+@use './variables.scss' as *;
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+	font-size: 1.7rem;
+	margin-top: 1rem;
+
+	&-items {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		gap: 4rem;
+		margin: 0 auto;
+
+		a {
+			color: $color-dark;
+		}
+	}
+}
+@media only screen and (max-width: 900px) {
+	.nav {
+		width: 98%;
+		&-items {
+			gap: 2rem;
+		}
+	}
+}
+
