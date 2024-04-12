@@ -3,7 +3,7 @@
 html {
 	scroll-behavior: smooth;
 	font-size: 62.5%;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: Poppins;
 }
 
 body {
@@ -39,6 +39,7 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 15rem;
 
 	a {
 		color: $color-white;
@@ -49,5 +50,19 @@ a {
 
 	&-primary {
 		background-color: $color-primary;
+	}
+}
+
+.caps {
+	text-transform: capitalize;
+}
+
+.bold {
+	font-weight: bold;
+}
+.mg-top {
+	margin-top: 3rem;
+	&-lg {
+		margin-top: 5rem;
 	}
 }
