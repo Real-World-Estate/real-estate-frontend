@@ -247,3 +247,45 @@
 		transform: translate(-30%, 30%);
 	}
 }
+
+/*STYLING THE SERVICES SECTION***/
+.service {
+	width: 90%;
+	margin: 0 auto;
+
+	& .title {
+		text-align: center;
+
+		h2 {
+			font-size: 4rem;
+			font-weight: 300;
+			span {
+				color: $color-primary;
+			}
+		}
+	}
+
+	& .content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		& .item {
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+			justify-content: center;
+			align-items: center;
+			max-width: 24%;
+			text-align: center;
+
+			& h4 {
+				color: $color-primary;
+				margin: 0;
+				font-family: PT Sans;
+				font-size:2.1rem;
+			}
+		}
+	}
+}
