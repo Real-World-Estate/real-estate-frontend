@@ -9,6 +9,12 @@ import logo2 from './LOGOS/STYLE 2 LOGO.png';
 
 // IMAGES
 import houseHeader from './IMAGES/kindpng_cropped.png';
+import housePic1 from './IMAGES/3d-model-residential-building.jpg';
+import housePic2 from './IMAGES/h7-c4.jpg.png';
+import housePic3 from './IMAGES/h7-c6.jpg.png';
+import housePic4 from './IMAGES/high-rise-office-buildings.jpg';
+import housePic5 from './IMAGES/neo-brutalism-inspired-building.jpg';
+import housePic6 from './IMAGES/vertical-shot-some-beautiful-buildings-captured-through-some-fences (1).jpg';
 
 //PARTNERS
 import partnerMain from './EXTRA/Partners.png';
@@ -51,6 +57,12 @@ export const appLogo = {
 
 export const image = {
 	houseHeader,
+	housePic1,
+	housePic2,
+	housePic3,
+	housePic4,
+	housePic5,
+	housePic6,
 };
 
 export const partners = {
