@@ -40,7 +40,7 @@
 	align-items: center;
 	width: 90%;
 	margin: 0 auto;
-	background-color: $color-light-grey;
+	background-color: $color-tertiary;
 	overflow: hidden;
 	border-radius: 2rem;
 	&-main {
@@ -53,6 +53,9 @@
 		& h1 {
 			margin-top: 0;
 			font-size: 4.9rem;
+			& .main {
+				color: $color-secondary;
+			}
 			& .sub {
 				font-family: Nanum Myeongjo;
 				color: $color-primary;
@@ -70,5 +73,35 @@
 		img {
 			border-radius: 5rem;
 		}
+	}
+}
+
+/*STYLING THE PARTNER SECTION*/
+.partner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	& .title {
+		background-image: url(./../assets/EXTRA/Partners.png);
+		& h4,
+		& h2 {
+			text-align: center;
+		}
+		& h4 {
+			color: $color-primary;
+		}
+		& h2 {
+			font-size: 3rem;
+		}
+	}
+
+	& .partner-logos {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5rem;
+		flex-wrap: wrap;
 	}
 }
