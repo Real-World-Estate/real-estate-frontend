@@ -7,6 +7,12 @@ import logo_cut from './LOGOS/logo cut.png';
 import logo from './LOGOS/LOGO REAL ESTATE.png';
 import logo2 from './LOGOS/STYLE 2 LOGO.png';
 
+// IMAGES
+import houseHeader from './IMAGES/kindpng_cropped.png';
+
+//PARTNERS
+
+
 export const appLogo = {
 	client_logo1,
 	client_logo2,
@@ -16,4 +22,8 @@ export const appLogo = {
 	logo_cut,
 	logo,
 	logo2,
+};
+
+export const image = {
+	houseHeader,
 };
