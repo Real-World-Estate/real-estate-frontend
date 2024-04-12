@@ -11,7 +11,7 @@ import logo2 from './LOGOS/STYLE 2 LOGO.png';
 import houseHeader from './IMAGES/kindpng_cropped.png';
 
 //PARTNERS
-
+import partnerMain from './EXTRA/Partners.png';
 
 export const appLogo = {
 	client_logo1,
@@ -27,3 +27,7 @@ export const appLogo = {
 export const image = {
 	houseHeader,
 };
+
+export const partners = {
+	partnerMain,
+}
