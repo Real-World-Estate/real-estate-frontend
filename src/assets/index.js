@@ -34,6 +34,9 @@ import iconPerson from './ICONS/Group 2.png';
 
 //VECTOR
 import vectorDots from './VECTORS GRAPHICS/Vector.png';
+import vectorMotel from './VECTORS GRAPHICS/undraw_coming_home_52ir.png';
+import vectorHotel from './VECTORS GRAPHICS/undraw_quite_town_mg2q.png';
+import vectorHouse from './VECTORS GRAPHICS/undraw_for_sale_viax.png';
 
 export const appLogo = {
 	client_logo1,
@@ -78,4 +81,7 @@ export const icon = {
 
 export const vector = {
 	vectorDots,
+	vectorHotel,
+	vectorMotel,
+	vectorHouse,
 };
