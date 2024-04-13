@@ -4,6 +4,7 @@ import Partners from '../components/Partners';
 import About from '../components/About';
 import Services from '../components/Services';
 import Portfolio from '../components/Portfolio';
+import Experience from '../components/Experience';
 
 function Home() {
 	return (
@@ -13,6 +14,7 @@ function Home() {
 			<About />
 			<Services />
 			<Portfolio />
+			<Experience />
 		</div>
 	);
 }
