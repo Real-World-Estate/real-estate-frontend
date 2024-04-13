@@ -37,6 +37,8 @@ import iconStar from './ICONS/Component 3.png';
 import iconBatch from './ICONS/Group 44.png';
 import iconVerified from './ICONS/Mask Group.png';
 import iconPerson from './ICONS/Group 2.png';
+import iconBlackUp from './ICONS/Ellipse 51.png';
+import iconBlackDown from './ICONS/Group 2034.png';
 
 //VECTOR
 import vectorDots from './VECTORS GRAPHICS/Vector.png';
@@ -89,6 +91,8 @@ export const icon = {
 	iconBatch,
 	iconVerified,
 	iconPerson,
+	iconBlackUp,
+	iconBlackDown,
 };
 
 export const vector = {
