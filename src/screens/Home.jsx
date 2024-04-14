@@ -6,6 +6,7 @@ import Services from '../components/Services';
 import Portfolio from '../components/Portfolio';
 import Experience from '../components/Experience';
 import Feedback from '../components/Feedback';
+import ContactUs from '../components/ContactUs';
 
 function Home() {
 	return (
@@ -17,6 +18,7 @@ function Home() {
 			<Portfolio />
 			<Experience />
 			<Feedback />
+			<ContactUs />
 		</div>
 	);
 }
