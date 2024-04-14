@@ -7,6 +7,7 @@ import Portfolio from '../components/Portfolio';
 import Experience from '../components/Experience';
 import Feedback from '../components/Feedback';
 import ContactUs from '../components/ContactUs';
+import Faqs from '../components/Faqs';
 
 function Home() {
 	return (
@@ -19,6 +20,7 @@ function Home() {
 			<Experience />
 			<Feedback />
 			<ContactUs />
+			<Faqs />
 		</div>
 	);
 }
