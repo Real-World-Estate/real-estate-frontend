@@ -482,3 +482,121 @@
 		}
 	}
 }
+
+/*STYLING THE CONTACT US SECTION */
+.contact {
+	width: 90%;
+	margin: 0 auto;
+
+	& .title {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		// gap: 3rem;
+
+		& h4 {
+			color: $color-primary;
+			font-size: 2rem;
+			margin: 0;
+		}
+
+		& h2 {
+			font-size: 3rem;
+			margin: 0;
+			margin-bottom: 3rem;
+		}
+		& p {
+			max-width: 70%;
+		}
+	}
+
+	&-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		& .contact-details {
+			display: flex;
+			justify-content: center;
+			gap: 2rem;
+			flex-direction: column;
+
+			& .item {
+				display: flex;
+				gap: 1.5rem;
+				align-items: center;
+
+				& .text {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					gap: 2rem;
+					& h3 {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		& .form-container {
+			border-radius: 0.5rem;
+			box-shadow: 0.05rem 0.05rem 0.5rem rgba($color-dark, 0.4);
+			padding: 2rem;
+			& h2 {
+				font-size: 3rem;
+				margin: 0;
+				font-weight: 500;
+			}
+
+			& form {
+				display: flex;
+				flex-direction: column;
+				gap: 1.5rem;
+				justify-content: center;
+
+				& button {
+					font-weight: bolder;
+					width: 100% !important;
+					cursor: pointer;
+				}
+
+				& .form-double,
+				& .form-single {
+					display: flex;
+					align-items: center;
+					gap: 2rem;
+
+					& .form-item {
+						display: flex;
+						gap: 0.4rem;
+						flex-direction: column;
+						justify-content: center;
+						width: 90%;
+
+						& input,
+						& textarea {
+							outline: 0.15rem solid $color-light-grey;
+							border: none;
+							border-radius: 0.3rem;
+							font-size: 1.4rem;
+							padding: 1.1rem;
+							resize: none;
+						}
+
+						& label {
+							font-size: 1.4rem;
+							font-weight: 500;
+						}
+					}
+				}
+
+				& .form-single {
+					& .form-item {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
