@@ -46,6 +46,11 @@ import vectorMotel from './VECTORS GRAPHICS/undraw_coming_home_52ir.png';
 import vectorHotel from './VECTORS GRAPHICS/undraw_quite_town_mg2q.png';
 import vectorHouse from './VECTORS GRAPHICS/undraw_for_sale_viax.png';
 
+//CONTACT
+import phone from './ICONS/contain-1.png';
+import email from './ICONS/contain-2.png';
+import location from './ICONS/contain.png';
+
 export const appLogo = {
 	client_logo1,
 	client_logo2,
@@ -100,4 +105,10 @@ export const vector = {
 	vectorHotel,
 	vectorMotel,
 	vectorHouse,
+};
+
+export const contact = {
+	phone,
+	email,
+	location,
 };
