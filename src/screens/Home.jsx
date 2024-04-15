@@ -8,6 +8,7 @@ import Experience from '../components/Experience';
 import Feedback from '../components/Feedback';
 import ContactUs from '../components/ContactUs';
 import Faqs from '../components/Faqs';
+import Blogs from '../components/Blogs';
 
 function Home() {
 	return (
@@ -21,6 +22,7 @@ function Home() {
 			<Feedback />
 			<ContactUs />
 			<Faqs />
+			<Blogs />
 		</div>
 	);
 }
