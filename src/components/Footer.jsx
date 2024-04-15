@@ -7,7 +7,9 @@ function Footer() {
 		<footer className="footer mg-top-lg">
 			<div className="footer-container">
 				<div className="footer-about item">
-					<h3>About Real <span>Estate</span> Competent <span>Property</span> </h3>
+					<h3>
+						About Real <span>Estate</span> Competent <span>Property</span>{' '}
+					</h3>
 					<span className="text">
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
 						corrupti culpa quas quisquam, optio architecto ipsa qui quae minima
@@ -55,8 +57,8 @@ function Footer() {
 				</div>
 			</div>
 			<div className="sign">
-				@copy 2024 Competent <span>Property</span> - Buy, Sell, or Rent. All Rights
-				Reserved
+				&copy;2024 Competent <span>Property</span> - Buy, Sell, or Rent. All
+				Rights Reserved
 			</div>
 		</footer>
 	);
