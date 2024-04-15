@@ -54,6 +54,14 @@ import phone from './ICONS/contain-1.png';
 import email from './ICONS/contain-2.png';
 import location from './ICONS/contain.png';
 
+//SOCIALS
+import twitter from './ICONS/1.png';
+import facebook from './ICONS/2.png';
+import instagram from './ICONS/3.png';
+import phoneOutline from './ICONS/phone.png';
+import mailOutline from './ICONS/mail.png';
+import mapOutline from './ICONS/map-pin.png';
+
 export const appLogo = {
 	client_logo1,
 	client_logo2,
@@ -119,5 +127,14 @@ export const contact = {
 export const faqs = {
 	iconBrownDown,
 	iconBrownUp,
-	faqsMain
+	faqsMain,
+};
+
+export const foot = {
+	facebook,
+	instagram,
+	twitter,
+	phoneOutline,
+	mapOutline,
+	mailOutline,
 };
