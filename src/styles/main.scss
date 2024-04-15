@@ -764,3 +764,52 @@
 		box-shadow: 0.05rem 0.05rem 0.5rem rgba($color-dark, 0.4);
 	}
 }
+
+/*STYLING THE FOOTER */
+.footer {
+	background-color: $color-light-grey;
+
+	&-container {
+		display: flex;
+		width: 90%;
+		margin: 0 auto;
+		padding: 4rem 0;
+		justify-content: center;
+		gap: 3rem;
+		flex-wrap: wrap;
+
+		& > div {
+			flex: 1;
+		}
+
+		& .item {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+			min-width: 20rem;
+
+			& .socials,
+			& .info {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+			}
+
+			& h3 {
+				span {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+
+	& .sign {
+		background-color: $color-white;
+		padding: 2rem;
+		text-align: center;
+
+		& span {
+			color: $color-primary;
+		}
+	}
+}
