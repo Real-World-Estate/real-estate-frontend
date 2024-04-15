@@ -10,6 +10,7 @@ import ContactUs from '../components/ContactUs';
 import Faqs from '../components/Faqs';
 import Blogs from '../components/Blogs';
 import Location from '../components/Location';
+import Footer from '../components/Footer';
 
 function Home() {
 	return (
@@ -25,6 +26,7 @@ function Home() {
 			<Faqs />
 			<Blogs />
 			<Location />
+			<Footer />
 		</div>
 	);
 }
