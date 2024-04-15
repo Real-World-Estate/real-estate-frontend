@@ -47,13 +47,15 @@ a {
 
 	a {
 		color: $color-white;
-		&.active {
-			color: $color-white;
-		}
 	}
 
 	&-primary {
 		background-color: $color-primary;
+	}
+	&-secondary {
+		border: 0.2rem solid $color-primary;
+		// background-color: transparent;
+		color: $color-primary;
 	}
 }
 
