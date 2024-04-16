@@ -24,7 +24,10 @@ function DashBody() {
           setUsers(data.results);
           setIsLoading(false);
         })
-        .catch((error) => console.error(error));
+        .catch((error) => {
+          console.error(error);
+          setIsLoading(false);
+        });
     },
     [results]
   );
