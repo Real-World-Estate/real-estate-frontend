@@ -68,7 +68,7 @@ a {
 		height: 5rem;
 		background-color: white;
 	}
-	
+
 	&.show {
 		opacity: 0;
 	}
@@ -95,4 +95,8 @@ a {
 	&-exlg {
 		margin-top: 8rem;
 	}
+}
+
+.full-width {
+	width: 100%;
 }
