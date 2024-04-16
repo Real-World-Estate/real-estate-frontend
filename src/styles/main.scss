@@ -428,7 +428,7 @@
 			gap: 1.5rem;
 			justify-content: center;
 			align-items: center;
-			max-width: 24%;
+			max-width: 40rem;
 			text-align: center;
 
 			& h4 {
@@ -554,13 +554,14 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		flex-wrap: wrap;
 
 		& .content-text {
 			display: flex;
 			flex-direction: column;
 			gap: 3rem;
 			justify-content: center;
-			max-width: 40%;
+			max-width: 50rem;
 
 			& h2 {
 				font-size: 3rem;
@@ -574,6 +575,8 @@
 			display: flex;
 			align-items: center;
 			gap: 2rem;
+			max-width: 50rem;
+			flex-wrap: wrap;
 
 			& .item {
 				height: 22rem;
@@ -605,6 +608,40 @@
 		position: absolute;
 		bottom: 0;
 		right: 0;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.experience {
+		& .icon-up {
+			height: 12rem;
+		}
+		& .icon-down {
+			height: 12rem;
+		}
+	}
+}
+@media only screen and (max-width: 700px) {
+	.experience {
+		& .content-box {
+			display: flex;
+			align-items: center;
+			gap: 2rem;
+			max-width: 50rem;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 5rem;
+			& .item {
+				height: 30rem;
+				width: 30rem;
+			}
+		}
+
+		& .icon-up {
+			height: 8rem;
+		}
+		& .icon-down {
+			height: 8rem;
+		}
 	}
 }
 
@@ -645,7 +682,7 @@
 			background-color: $color-white;
 			border-radius: 0.4rem;
 			padding: 2rem;
-			max-width: 24%;
+			max-width: 40rem;
 			box-shadow: 0.05rem 0.05rem 0.8rem rgba($color-dark, 0.4);
 			font-size: 1.1rem;
 			transition: all 0.5s ease-in-out;
@@ -684,6 +721,19 @@
 	}
 }
 
+@media only screen and (max-width: 700px) {
+	.feedback {
+		width: 95%;
+
+		&-container {
+			& .item {
+				max-width: 40rem;
+				min-width: 30rem;
+			}
+		}
+	}
+}
+
 /*STYLING THE CONTACT US SECTION */
 .contact {
 	width: 90%;
@@ -700,15 +750,18 @@
 			color: $color-primary;
 			font-size: 2rem;
 			margin: 0;
+			text-align: center;
 		}
 
 		& h2 {
 			font-size: 3rem;
 			margin: 0;
 			margin-bottom: 3rem;
+			text-align: center;
 		}
 		& p {
 			max-width: 70%;
+			text-align: center;
 		}
 	}
 
@@ -716,12 +769,16 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+		flex-wrap: wrap;
+		gap: 4rem;
+		padding: 2rem;
 
 		& .contact-details {
 			display: flex;
 			justify-content: center;
 			gap: 2rem;
 			flex-direction: column;
+			min-width: 50rem;
 
 			& .item {
 				display: flex;
@@ -802,6 +859,52 @@
 	}
 }
 
+@media only screen and (max-width: 550px) {
+	.contact {
+		width: 100%;
+		&-content {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			gap: 4rem;
+			padding: 2rem;
+
+			& .contact-details {
+				max-width: 50rem;
+				min-width: 30rem;
+			}
+
+			& .form-container {
+				padding: 2rem;
+
+				& form {
+					display: flex;
+					flex-direction: column;
+					gap: 1.5rem;
+					justify-content: center;
+
+					& .form-double,
+					& .form-single {
+						display: flex;
+						align-items: flex-start;
+						gap: 2rem;
+						flex-direction: column;
+						justify-content: center;
+						& .form-item {
+							display: flex;
+							gap: 0.4rem;
+							flex-direction: column;
+							justify-content: center;
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 /* STYLING FOR THE FAQS SECTION*/
 .faqs {
 	width: 85%;
@@ -846,6 +949,7 @@
 				justify-content: space-between;
 				align-items: center;
 				cursor: pointer;
+				max-width: 90%;
 			}
 
 			& .answer {
@@ -875,6 +979,18 @@
 	}
 }
 
+@media only screen and (max-width: 700px) {
+	.faqs {
+		width: 95%;
+		padding-bottom: 15rem;
+
+		& .icon-down,
+		& .icon-up {
+			height: 12rem;
+		}
+	}
+}
+
 //BLOGS
 .blog {
 	width: 90%;
@@ -891,6 +1007,7 @@
 
 	&-section {
 		display: flex;
+		flex-wrap: wrap;
 		// gap: 1rem;
 
 		& .main {
@@ -927,6 +1044,7 @@
 			flex-direction: column;
 			gap: 2rem;
 			width: 29%;
+			min-width: 30rem;
 
 			&-item {
 				display: flex;
@@ -951,6 +1069,78 @@
 	}
 }
 
+@media only screen and (max-width: 1100px) {
+	.blog {
+		width: 90%;
+
+		&-section {
+			display: flex;
+			// gap: 1rem;
+
+			& .main {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				gap: 3.5rem;
+				width: 99%;
+				&-item {
+					max-width: 30rem;
+					& img {
+						width: 30rem;
+						height: 30rem;
+						object-fit: cover;
+						border-radius: 0.5rem;
+					}
+					& h3 {
+						font-size: 2rem;
+						font-weight: 500;
+						font-weight: bolder;
+						margin: 0;
+						padding: 0;
+					}
+
+					& p {
+						padding: 0.8rem;
+						margin: 0;
+					}
+				}
+			}
+			& .side {
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+				width: 80%;
+				margin-top: 4rem;
+
+				&-item {
+					display: flex;
+					gap: 1.5rem;
+					align-items: center;
+					justify-content: center;
+
+					& img {
+						height: 10rem;
+						width: 10rem;
+						object-fit: cover;
+						border-radius: 0.5rem;
+						background-color: $color-tertiary;
+					}
+
+					& h3 {
+						font-size: 1.5rem;
+						font-weight: bolder;
+						font-weight: 500;
+					}
+					& p {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
 /*STYLING THE LOCATION SECTION*/
 
 .location {
@@ -963,6 +1153,12 @@
 		height: 65rem;
 		border: none;
 		box-shadow: 0.05rem 0.05rem 0.5rem rgba($color-dark, 0.4);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.location{
+		width: 100%;
 	}
 }
 
