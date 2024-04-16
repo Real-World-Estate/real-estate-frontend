@@ -1,5 +1,11 @@
+import { DashTopBar } from "../components/dashboard";
+
 function Dashboard() {
-  return <div>Your Dashboard</div>;
+  return (
+    <div className="dashboard">
+      <DashTopBar />
+    </div>
+  );
 }
 
 export default Dashboard;
