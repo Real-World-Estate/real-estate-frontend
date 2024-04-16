@@ -56,3 +56,130 @@
     }
   }
 }
+
+// THE DASHBOARD BODY
+.dashboard-body {
+  margin-left: 7rem;
+  padding-top: 2.5rem;
+  border-left: 2px solid $color-grey;
+
+  & .body-top-nav {
+    display: flex;
+    padding-left: 3rem;
+    gap: 2rem;
+
+    & button {
+      border: none;
+      outline: none;
+      background: none;
+      padding: 0.3rem;
+
+      & span {
+        font-size: 1rem;
+        padding: 0.3rem;
+        border-radius: 0.5rem;
+        color: $color-white;
+        margin-left: 0.3rem;
+        background-color: rgba($color-grey-dark, 0.7);
+      }
+    }
+
+    & .btn-active {
+      border-bottom: 2px solid $color-primary;
+
+      & span {
+        background-color: $color-primary;
+      }
+    }
+  }
+
+  & .body-table {
+    & .table {
+      width: 97%;
+      margin: 3rem 1rem;
+      border-collapse: collapse;
+
+      & .active {
+        background-color: $color-primary;
+        color: $color-white;
+      }
+
+      & tr {
+        padding: 0.8rem;
+        margin: 0.7rem 0;
+        border: 1px solid $color-grey;
+        border-radius: 0.5rem;
+        font-size: 1.3rem;
+        text-align: center;
+
+        & th {
+          color: $color-grey-dark;
+          font-weight: 400;
+          font-size: 1.5rem;
+          text-align: center;
+          padding: 0.8rem;
+          border: none;
+        }
+
+        & td {
+          padding: 1rem;
+
+          &:last-of-type {
+            padding: 0;
+          }
+
+          & button {
+            outline: none;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+            font-size: 1.2rem;
+          }
+
+          & div {
+            border: 1px solid $color-grey;
+            margin: 0;
+            margin-bottom: 0.5rem;
+
+            & h4 {
+              color: $color-primary;
+              background-color: $color-primary-light;
+              margin: 0;
+              padding: 1rem;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Other specific calsses here
+  .completed {
+    box-shadow: 1px 2px 3px $shadow-color;
+    color: $color-green;
+    background-color: $color-green-light;
+  }
+
+  .pending {
+    box-shadow: 1px 2px 3px $shadow-color;
+    color: $color-primary;
+    background-color: $color-primary-light;
+  }
+
+  & .results-showing {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 0 3rem;
+
+    & p {
+      font-size: 1.3rem;
+      color: $color-grey-dark;
+    }
+    & select {
+      outline: none;
+      border: 1px solid $color-grey;
+    }
+  }
+}

@@ -1,9 +1,10 @@
-import { DashTopBar } from "../components/dashboard";
+import { DashBody, DashTopBar } from "../components/dashboard";
 
 function Dashboard() {
   return (
     <div className="dashboard">
       <DashTopBar />
+      <DashBody />
     </div>
   );
 }
