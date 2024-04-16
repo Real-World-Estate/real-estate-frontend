@@ -12,7 +12,12 @@ function DashBody() {
     function () {
       setIsLoading(true);
       fetch(
-        `https://randomuser.me/api/?inc=name,email,phone&results=${results}`
+        `https://calendar-api-cdef.onrender.com/getEvents`,
+        {
+          method: "get",
+          mode: "cors",
+        }
+        // `https://randomuser.me/api/?inc=name,email,phone&results=${results}`
       )
         .then((response) => response.json())
         .then((data) => {
@@ -23,6 +28,7 @@ function DashBody() {
     },
     [results]
   );
+  console.log(users);
 
   return (
     <div className="dashboard-body">
