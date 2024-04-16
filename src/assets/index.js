@@ -42,6 +42,7 @@ import iconBlackDown from './ICONS/Group 2034.png';
 import iconBrownUp from './ICONS/Ellipse 51 (1) UP.png';
 import iconBrownDown from './ICONS/Ellipse 52 Down.png';
 import faqsMain from './EXTRA/Faqs.png';
+import menu from './ICONS/menu.png';
 
 //VECTOR
 import vectorDots from './VECTORS GRAPHICS/Vector.png';
@@ -81,6 +82,7 @@ export const image = {
 	housePic4,
 	housePic5,
 	housePic6,
+	menu,
 };
 
 export const partners = {

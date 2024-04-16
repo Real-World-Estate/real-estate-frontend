@@ -23,6 +23,14 @@
 			color: $color-dark;
 		}
 	}
+	@media only screen and (max-width: 600px) {
+		.res {
+			display: none;
+		}
+		.logo{
+			margin-right:auto;
+		}
+	}
 }
 @media only screen and (max-width: 900px) {
 	.nav {
@@ -1157,7 +1165,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-	.location{
+	.location {
 		width: 100%;
 	}
 }
