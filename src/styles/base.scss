@@ -47,6 +47,11 @@ a {
 
 	a {
 		color: $color-white;
+
+		img {
+			height: 4rem;
+			width: 4rem;
+		}
 	}
 
 	&-primary {
@@ -56,6 +61,22 @@ a {
 		border: 0.2rem solid $color-primary;
 		// background-color: transparent;
 		color: $color-primary;
+	}
+
+	&-secondary-short {
+		width: 5rem;
+		height: 5rem;
+		background-color: white;
+	}
+
+	&.show {
+		opacity: 0;
+	}
+
+	@media only screen and (max-width: 600px) {
+		&.show {
+			opacity: 1;
+		}
 	}
 }
 
@@ -74,4 +95,8 @@ a {
 	&-exlg {
 		margin-top: 8rem;
 	}
+}
+
+.full-width {
+	width: 100%;
 }

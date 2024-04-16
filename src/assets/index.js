@@ -33,6 +33,7 @@ import profile4 from "./IMAGES/profile 4.jpeg";
 import profile5 from "./IMAGES/profile 5.jpeg";
 
 //ICONS
+<<<<<<< HEAD
 import iconStar from "./ICONS/Component 3.png";
 import iconBatch from "./ICONS/Group 44.png";
 import iconVerified from "./ICONS/Mask Group.png";
@@ -43,6 +44,19 @@ import iconBrownUp from "./ICONS/Ellipse 51 (1) UP.png";
 import iconBrownDown from "./ICONS/Ellipse 52 Down.png";
 import faqsMain from "./EXTRA/Faqs.png";
 import iconDelete from "./ICONS/delete.png";
+=======
+import iconStar from './ICONS/Component 3.png';
+import iconBatch from './ICONS/Group 44.png';
+import iconVerified from './ICONS/Mask Group.png';
+import iconPerson from './ICONS/Group 2.png';
+import iconBlackUp from './ICONS/Ellipse 51.png';
+import iconBlackDown from './ICONS/Group 2034.png';
+import iconBrownUp from './ICONS/Ellipse 51 (1) UP.png';
+import iconBrownDown from './ICONS/Ellipse 52 Down.png';
+import faqsMain from './EXTRA/Faqs.png';
+import menu from './ICONS/menu.png';
+import close from './ICONS/x_icon.png';
+>>>>>>> c5d7d2317aa30789253e661c9b0a0dc46afb4f36
 
 //VECTOR
 import vectorDots from "./VECTORS GRAPHICS/Vector.png";
@@ -75,6 +89,7 @@ export const appLogo = {
 };
 
 export const image = {
+<<<<<<< HEAD
   houseHeader,
   housePic1,
   housePic2,
@@ -82,6 +97,17 @@ export const image = {
   housePic4,
   housePic5,
   housePic6,
+=======
+	houseHeader,
+	housePic1,
+	housePic2,
+	housePic3,
+	housePic4,
+	housePic5,
+	housePic6,
+	menu,
+	close,
+>>>>>>> c5d7d2317aa30789253e661c9b0a0dc46afb4f36
 };
 
 export const partners = {

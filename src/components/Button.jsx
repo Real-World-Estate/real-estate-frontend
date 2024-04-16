@@ -1,12 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
-function Button({ color, text, link, STYLE = '' }) {
-	return (
-		<button className={`btn btn-${color} ${STYLE}`}>
-			<NavLink to={link}>{text}</NavLink>
-		</button>
-	);
+function Button({ onClick = 'default', color, text, link, STYLE = '' }) {
+	let returnValue =
+		onClick === 'default' ? (
+			<button className={`btn btn-${color} ${STYLE}`}>
+				<a href={link}>{text}</a>
+			</button>
+		) : (
+			<button onClick={onClick} className={`btn btn-${color} ${STYLE}`}>
+				<a href={link}>{text}</a>
+			</button>
+		);
+	return returnValue;
 }
 
 export default Button;

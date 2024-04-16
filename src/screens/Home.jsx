@@ -11,8 +11,9 @@ import Faqs from '../components/Faqs';
 import Blogs from '../components/Blogs';
 import Location from '../components/Location';
 import Footer from '../components/Footer';
+import MobileNav from '../components/MobileNav';
 
-function Home() {
+function Home({isClose, setIsClose}) {
 	return (
 		<div>
 			<Header />
@@ -27,6 +28,7 @@ function Home() {
 			<Blogs />
 			<Location />
 			<Footer />
+			<MobileNav isClose={isClose} setIsClose={setIsClose} />
 		</div>
 	);
 }

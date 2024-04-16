@@ -4,14 +4,22 @@ import Blog from "./screens/Blog";
 import Error404 from "./screens/Error404";
 import AppScreen from "./screens/AppScreen";
 import Dashboard from "./screens/Dashboard";
+import { useState } from "react";
 
 function App() {
+  const [isClose, setIsClose] = useState(true);
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<AppScreen />}>
-            <Route path="" element={<Home />} />
+          <Route
+            path="/"
+            element={<AppScreen isClose={isClose} setIsClose={setIsClose} />}
+          >
+            <Route
+              path=""
+              element={<Home isClose={isClose} setIsClose={setIsClose} />}
+            />
             <Route path="blog" element={<Blog />} />
             <Route path="*" element={<Error404 />} />
           </Route>

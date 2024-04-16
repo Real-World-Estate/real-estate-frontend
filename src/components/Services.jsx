@@ -3,7 +3,7 @@ import { vector } from '../assets';
 
 function Services() {
 	return (
-		<div className="service mg-top-lg">
+		<div className="service mg-top-lg" id="services">
 			<div className="title mg-top-lg">
 				<h2>
 					<span>Services We</span> provide

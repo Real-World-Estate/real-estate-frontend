@@ -2,10 +2,10 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 
-function AppScreen() {
+function AppScreen({ isClose, setIsClose }) {
 	return (
 		<>
-			<NavBar />
+			<NavBar isClose={isClose} setIsClose={setIsClose} />
 			<Outlet />
 		</>
 	);

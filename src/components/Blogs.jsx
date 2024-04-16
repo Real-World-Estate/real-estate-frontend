@@ -3,7 +3,7 @@ import { image } from '../assets';
 
 function Blogs() {
 	return (
-		<div className="blog">
+		<div className="blog" id='blog'>
 			<h2>Blogs</h2>
 			<div className="blog-section mg-top-lg">
 				<div className="main">
