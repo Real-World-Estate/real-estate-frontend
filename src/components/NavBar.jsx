@@ -2,7 +2,7 @@ import React from 'react';
 import { appLogo, image } from '../assets';
 import Button from './Button';
 
-function NavBar() {
+function NavBar({ isClose, setIsClose }) {
 	return (
 		<nav className="nav">
 			<img src={appLogo.logo_cut} className="logo" alt={'Application Logo'} />
@@ -24,6 +24,7 @@ function NavBar() {
 				color={'secondary'}
 				text={<img src={image.menu} alt="" />}
 				link={'#'}
+				onClick={() => setIsClose(false)}
 			/>
 		</nav>
 	);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { foot } from '../assets';
 
 function Footer() {
@@ -16,13 +15,13 @@ function Footer() {
 						voluptate!
 					</span>
 					<div className="socials">
-						<a href="">
+						<a href="#facebook">
 							<img src={foot.facebook} alt="Facebook icon" />
 						</a>
-						<a href="">
+						<a href="#twitter">
 							<img src={foot.twitter} alt="Twitter icon" />
 						</a>
-						<a href="">
+						<a href="#instagram">
 							<img src={foot.instagram} alt="Instagram icon" />
 						</a>
 					</div>
