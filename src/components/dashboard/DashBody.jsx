@@ -1,54 +1,35 @@
 import { useEffect, useState } from "react";
 import DashTable from "./DashTable";
+import Loader from "../Loader";
+import SortButton from "./SortButton";
 
 function DashBody() {
   const [users, setUsers] = useState([]);
-  const [activeStatus, setActiveStatus] = useState(false);
   const [results, setResults] = useState(10);
+  const [isLoading, setIsLoading] = useState("false");
 
   useEffect(
     function () {
+      setIsLoading(true);
       fetch(
         `https://randomuser.me/api/?inc=name,email,phone&results=${results}`
       )
         .then((response) => response.json())
         .then((data) => {
           setUsers(data.results);
+          setIsLoading(false);
         })
         .catch((error) => console.error(error));
     },
     [results]
   );
 
-  function handleActiveClass() {
-    if (activeStatus === true) {
-      setActiveStatus(!activeStatus);
-    } else {
-      setActiveStatus(!activeStatus);
-    }
-  }
-
   return (
     <div className="dashboard-body">
       <div className="body-top-nav">
-        <button
-          className={`${activeStatus === true ? "btn-active" : ""}`}
-          onClick={handleActiveClass}
-        >
-          All Orders <span>148</span>
-        </button>
-        <button
-          onClick={handleActiveClass}
-          className={`${activeStatus === true ? "btn-active" : ""}`}
-        >
-          Pending <span>48</span>
-        </button>
-        <button
-          onClick={handleActiveClass}
-          className={`${activeStatus === true ? "btn-active" : ""}`}
-        >
-          Completed <span>100</span>
-        </button>
+        <SortButton sortBy="All Orders" number="148" />
+        <SortButton sortBy="Pending" number="48" />
+        <SortButton sortBy="Completed" number="100" />
       </div>
 
       <div className="body-table">
@@ -67,7 +48,9 @@ function DashBody() {
             </tr>
           </thead>
           <tbody>
-            {users?.length > 0 ? (
+            {isLoading ? (
+              <Loader />
+            ) : users?.length > 0 ? (
               users?.map((user, i) => {
                 return <DashTable user={user} i={i} key={i} />;
               })
@@ -91,7 +74,7 @@ function DashBody() {
           <option value="20">20</option>
           <option value="30">30</option>
           <option value="40">40</option>
-          <option value="50">40</option>
+          <option value="50">50</option>
         </select>
       </div>
     </div>

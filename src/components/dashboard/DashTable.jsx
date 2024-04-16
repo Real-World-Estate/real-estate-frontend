@@ -21,17 +21,14 @@ function DashTable({ user, i }) {
 
   return (
     <>
-      <tr
-        onClick={handleShowMessage}
-        className={`${showMessage === true ? "active" : ""}`}
-      >
+      <tr className={`${showMessage === true ? "active" : ""}`}>
         <td>{i + 1}</td>
         <td>{user?.name.first}</td>
         <td>{user?.name.last}</td>
         <td>{user?.phone}</td>
         <td>{user?.email}</td>
         <td>{date.toLocaleString()}</td>
-        <td>{message.slice(0, 19)} ...</td>
+        <td onClick={handleShowMessage}>{message.slice(0, 19)} ...</td>
         <td>
           <button
             onClick={changeStatus}
