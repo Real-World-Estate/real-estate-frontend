@@ -4,7 +4,7 @@ import Button from './Button';
 
 function About() {
 	return (
-		<div className="about mg-top-lg">
+		<div className="about mg-top-lg" id='about'>
 			<div className="about-content">
 				<div className="about-images">
 					<img className="pic1" src={about.rect49} alt={'About pics'} />

@@ -4,7 +4,7 @@ import { image } from '../assets';
 
 function Header() {
 	return (
-		<header className="header mg-top">
+		<header className="header mg-top" id='home'>
 			<div className="header-main">
 				<h4>Smile to a home with</h4>
 				<h1>
@@ -22,7 +22,7 @@ function Header() {
 					STYLE={'bold'}
 					color={'primary'}
 					text={'BOOK NOW'}
-					link={'/#contact'}
+					link={'/#contact-us'}
 				/>
 			</div>
 			<div className="header-pic">

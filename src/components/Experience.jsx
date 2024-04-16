@@ -4,7 +4,7 @@ import { icon } from '../assets';
 
 function Experience() {
 	return (
-		<div className="experience">
+		<div className="experience" id='experience'>
 			<div className="experience-container">
 				<div className="content-text">
 					<h2>More Than 20 Years Of Real Estate Experience</h2>

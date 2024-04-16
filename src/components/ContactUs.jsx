@@ -3,7 +3,7 @@ import { contact } from '../assets';
 
 function ContactUs() {
 	return (
-		<div className="contact mg-top-exlg">
+		<div className="contact mg-top-exlg" id='contact-us'>
 			<div className="title">
 				<h4>CONTACT US</h4>
 				<h2>We Want To Hear From You</h2>

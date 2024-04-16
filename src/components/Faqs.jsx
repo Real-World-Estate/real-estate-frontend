@@ -4,7 +4,7 @@ import Question from './Question';
 
 function Faqs() {
 	return (
-		<div className="faqs">
+		<div className="faqs" id='faqs'>
 			<div className="title">
 				<img src={faqs.faqsMain} alt="Faqs Icon" />
 				<h4>Frequently Asked Questions</h4>

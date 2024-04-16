@@ -16,29 +16,29 @@ function Footer() {
 						voluptate!
 					</span>
 					<div className="socials">
-						<Link to="">
+						<a href="">
 							<img src={foot.facebook} alt="Facebook icon" />
-						</Link>
-						<Link to="">
+						</a>
+						<a href="">
 							<img src={foot.twitter} alt="Twitter icon" />
-						</Link>
-						<Link to="">
+						</a>
+						<a href="">
 							<img src={foot.instagram} alt="Instagram icon" />
-						</Link>
+						</a>
 					</div>
 				</div>
 				<div className="company item">
 					<h3>Company</h3>
-					<Link to={'/#about'}>About</Link>
-					<Link to="/#services">Features</Link>
-					<Link to={'/#portfolio'}>Works</Link>
-					<Link to={'/#experience'}>Careers</Link>
+					<a href={'/#about'}>About</a>
+					<a href="/#services">Features</a>
+					<a href={'/#portfolio'}>Works</a>
+					<a href={'/#experience'}>Careers</a>
 				</div>
 				<div className="help item">
 					<h3>Help</h3>
-					<Link to={'/#about'}>Customer Support</Link>
-					<Link to="/#services">Terms & Conditions</Link>
-					<Link to={'/#portfolio'}>Privacy Policy</Link>
+					<a href={'/#about'}>Customer Support</a>
+					<a href="/#services">Terms & Conditions</a>
+					<a href={'/#portfolio'}>Privacy Policy</a>
 				</div>
 				<div className="contact item">
 					<h3>Contacts</h3>

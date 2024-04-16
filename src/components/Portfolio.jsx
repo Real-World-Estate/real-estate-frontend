@@ -3,7 +3,7 @@ import { image } from '../assets';
 
 function Portfolio() {
 	return (
-		<div className="portfolio mg-top-lg">
+		<div className="portfolio mg-top-lg" id='portfolio'>
 			<div className="title mg-top-lg">
 				<h4>PORTFOLIO</h4>
 				<h2>Our Amazing Works</h2>

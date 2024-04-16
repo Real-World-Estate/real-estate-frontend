@@ -3,7 +3,7 @@ import { profile } from '../assets';
 
 function Feedback() {
 	return (
-		<div className="feedback">
+		<div className="feedback" id="testimonials">
 			<div className="title">
 				<span></span>
 				<h2>Our Customer Feedback</h2>
