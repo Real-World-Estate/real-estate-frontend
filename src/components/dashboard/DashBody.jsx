@@ -2,36 +2,30 @@ import { useEffect, useState } from "react";
 import DashTable from "./DashTable";
 import Loader from "../Loader";
 import SortButton from "./SortButton";
+// `https://randomuser.me/api/?inc=name,email,phone&results=${results}`
 
 function DashBody() {
   const [users, setUsers] = useState([]);
   const [results, setResults] = useState(10);
+  const [getUpdatedStatus, setGetUpdatedStatus] = useState(false);
   const [isLoading, setIsLoading] = useState("false");
 
   useEffect(
     function () {
       setIsLoading(true);
-      fetch(
-        `https://calendar-api-cdef.onrender.com/getEvents`,
-        {
-          method: "get",
-          mode: "cors",
-        }
-        // `https://randomuser.me/api/?inc=name,email,phone&results=${results}`
-      )
+      fetch(`https://calendar-api-cedf.onrender.com/getEvents`)
         .then((response) => response.json())
         .then((data) => {
-          setUsers(data.results);
+          setUsers(data);
           setIsLoading(false);
         })
         .catch((error) => {
-          console.error(error);
+          console.log(error);
           setIsLoading(false);
         });
     },
-    [results]
+    [results, getUpdatedStatus]
   );
-  console.log(users);
 
   return (
     <div className="dashboard-body">
@@ -61,7 +55,15 @@ function DashBody() {
               <Loader />
             ) : users?.length > 0 ? (
               users?.map((user, i) => {
-                return <DashTable user={user} i={i} key={i} />;
+                return (
+                  <DashTable
+                    user={user}
+                    i={i}
+                    key={i}
+                    setUsers={setUsers}
+                    setGetUpdatedStatus={setGetUpdatedStatus}
+                  />
+                );
               })
             ) : (
               <tr>

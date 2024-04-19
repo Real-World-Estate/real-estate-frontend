@@ -1,15 +1,41 @@
 import { useState } from "react";
 import { icon } from "../../assets";
+import Loader from "../Loader";
 
-const message =
-  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores laudantium doloremque accusamus sequi, possimus quidem? Ea velit, enim culpa doloribus cumque laborum minus reprehenderit nihil.";
 const date = new Date();
 
-function DashTable({ user, i }) {
+function DashTable({ user, i, setUsers, setGetUpdatedStatus }) {
   const [showMessage, setShowMessage] = useState(false);
+  const [userStatus, setUserStatus] = useState(user?.status);
+  const [isLoading, setIsLoading] = useState("false");
 
   function changeStatus() {
-    console.log("Status Changed");
+    if (userStatus === true) {
+      return console.log("No need to change the status");
+    }
+    setIsLoading(!isLoading);
+    fetch(`https://calendar-api-cedf.onrender.com/updateEvent/${user?.email}`, {
+      method: "PATCH",
+      mode: "cors",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setUserStatus(data?.status);
+        return fetch(`https://calendar-api-cedf.onrender.com/getEvents`)
+          .then((response) => response.json())
+          .then((data) => {
+            setUsers(data);
+            setIsLoading(false);
+          })
+          .catch((error) => {
+            console.log(error);
+            setIsLoading(false);
+          });
+      })
+      .catch((error) => {
+        console.log(error);
+        setIsLoading(false);
+      });
   }
 
   function handleShowMessage() {
@@ -23,18 +49,18 @@ function DashTable({ user, i }) {
     <>
       <tr className={`${showMessage === true ? "active" : ""}`}>
         <td>{i + 1}</td>
-        <td>{user?.name.first}</td>
-        <td>{user?.name.last}</td>
-        <td>{user?.phone}</td>
+        <td>{user?.first_name}</td>
+        <td>{user?.last_name}</td>
+        <td>{user?.contact}</td>
         <td>{user?.email}</td>
         <td>{date.toLocaleString()}</td>
-        <td onClick={handleShowMessage}>{message.slice(0, 19)} ...</td>
+        <td onClick={handleShowMessage}>{user?.message.slice(0, 19)} ...</td>
         <td>
           <button
             onClick={changeStatus}
-            className={`${i % 2 === 0 ? "completed" : "pending"}`}
+            className={`${userStatus === true ? "completed" : "pending"}`}
           >
-            Completed
+            {userStatus === true ? "Completed" : "Pending"}
           </button>
         </td>
         <td>
@@ -45,13 +71,14 @@ function DashTable({ user, i }) {
           />
         </td>
       </tr>
+
       {/* the message row */}
       {showMessage && (
         <tr className="view-message">
           <td colSpan="9">
             <div>
               <h4>Message</h4>
-              <p>{message}</p>
+              <p>{user?.message}</p>
             </div>
           </td>
         </tr>
