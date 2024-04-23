@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import DashTable from "./DashTable";
 import Loader from "../Loader";
-import SortButton from "./SortButton";
 // `https://randomuser.me/api/?inc=name,email,phone&results=${results}`
 
 function DashBody() {
@@ -30,9 +29,15 @@ function DashBody() {
   return (
     <div className="dashboard-body">
       <div className="body-top-nav">
-        <SortButton sortBy="All Orders" number="148" />
-        <SortButton sortBy="Pending" number="48" />
-        <SortButton sortBy="Completed" number="100" />
+        <button>
+          All Orders <span>148</span>
+        </button>
+        <button>
+          Pending <span>48</span>
+        </button>
+        <button>
+          Completed <span>100</span>
+        </button>
       </div>
 
       <div className="body-table">
