@@ -15,6 +15,13 @@ import housePic3 from "./IMAGES/h7-c6.jpg.png";
 import housePic4 from "./IMAGES/high-rise-office-buildings.jpg";
 import housePic5 from "./IMAGES/neo-brutalism-inspired-building.jpg";
 import housePic6 from "./IMAGES/vertical-shot-some-beautiful-buildings-captured-through-some-fences (1).jpg";
+import manPic1 from "./IMAGES/man- (1).jpg";
+import manPic2 from "./IMAGES/man- (2).jpg";
+import manPic3 from "./IMAGES/man- (3).jpg";
+import manPic4 from "./IMAGES/man- (4).jpg";
+import manPic5 from "./IMAGES/man- (5).jpg";
+import manPic6 from "./IMAGES/man- (6).jpg";
+import manPic7 from "./IMAGES/man- (7).jpg";
 
 //PARTNERS
 import partnerMain from "./EXTRA/Partners.png";
@@ -86,6 +93,13 @@ export const image = {
   housePic6,
   menu,
   close,
+  manPic1,
+  manPic2,
+  manPic3,
+  manPic4,
+  manPic5,
+  manPic6,
+  manPic7,
 };
 
 export const partners = {

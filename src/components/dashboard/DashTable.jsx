@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { icon } from "../../assets";
-import Loader from "../Loader";
 
 const date = new Date();
 

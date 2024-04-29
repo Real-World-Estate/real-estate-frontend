@@ -41,42 +41,44 @@ function DashBody() {
       </div>
 
       <div className="body-table">
-        <table className="table">
-          <thead>
-            <tr>
-              <th>S/N</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Phone</th>
-              <th>Email</th>
-              <th>Date Booked</th>
-              <th>Message</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {isLoading ? (
-              <Loader />
-            ) : users?.length > 0 ? (
-              users?.map((user, i) => {
-                return (
-                  <DashTable
-                    user={user}
-                    i={i}
-                    key={i}
-                    setUsers={setUsers}
-                    setGetUpdatedStatus={setGetUpdatedStatus}
-                  />
-                );
-              })
-            ) : (
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <table className="table">
+            <thead>
               <tr>
-                <td>No User Found</td>
+                <th>S/N</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Date Booked</th>
+                <th>Message</th>
+                <th>Status</th>
+                <th>Action</th>
               </tr>
-            )}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {users?.length > 0 ? (
+                users?.map((user, i) => {
+                  return (
+                    <DashTable
+                      user={user}
+                      i={i}
+                      key={i}
+                      setUsers={setUsers}
+                      setGetUpdatedStatus={setGetUpdatedStatus}
+                    />
+                  );
+                })
+              ) : (
+                <tr>
+                  <td>No User Found</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        )}
       </div>
 
       <div className="results-showing">
