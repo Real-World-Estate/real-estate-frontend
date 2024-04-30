@@ -55,21 +55,18 @@ function About() {
           <p>
             At Competent Property Group Ltd, our real estate division is driven
             by a team of experienced professionals who are dedicated to ensuring
-            the satisfaction of our clients. We offer comprehensive real estate
-            services, from property management and leasing to property sales and
-            valuations. Our goal is to make the real estate journey seamless and
-            stress-free for both landlords and tenants.In addition to our real
-            estate expertise, we are also committed to maintaining the
-            cleanliness and safety of your property.
+            the satisfaction of our clients.
           </p>
           <p>
             Our pest control or fumigation division utilizes the latest
             techniques and products to eliminate pests, ensuring a healthy and
-            comfortable environment for you and your family or employees.Our
-            professional cleaning services division is staffed by highly trained
-            professionals who are equipped with the latest cleaning tools and
-            techniques. We understand the importance of a clean and hygienic
-            space, whether it's a home, office, or commercial property.
+            comfortable environment for you and your family or employees
+          </p>
+          <p>
+            Lastly, our detergent production division is dedicated to creating
+            high-quality and effective cleaning products. We use innovative
+            formulations and rigorous testing to ensure that our detergents meet
+            the highest standards of quality and performance.
           </p>
           <div className="about-us-icons">
             <div className="content">

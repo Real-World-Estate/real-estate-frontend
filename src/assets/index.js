@@ -58,6 +58,9 @@ import vectorDots from "./VECTORS GRAPHICS/Vector.png";
 import vectorMotel from "./VECTORS GRAPHICS/undraw_coming_home_52ir.png";
 import vectorHotel from "./VECTORS GRAPHICS/undraw_quite_town_mg2q.png";
 import vectorHouse from "./VECTORS GRAPHICS/undraw_for_sale_viax.png";
+import detergent from "./VECTORS GRAPHICS/detergent.png";
+import fumigation from "./VECTORS GRAPHICS/fumigation.png";
+import portfolioDetergent from "./VECTORS GRAPHICS/portfolio-detergent.jpg";
 
 //CONTACT
 import phone from "./ICONS/contain-1.png";
@@ -136,6 +139,9 @@ export const vector = {
   vectorHotel,
   vectorMotel,
   vectorHouse,
+  fumigation,
+  detergent,
+  portfolioDetergent,
 };
 
 export const contact = {
