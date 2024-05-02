@@ -15,28 +15,8 @@ function ContactUs() {
 	const [formData, setFormData] = useState(data);
 	const [isLoading, setIsLoading] = useState(data);
 
-	const handleSubmit = async (e) => {
-		e.preventDefault();
-
-		try {
-			setIsLoading(true);
-			const res = await fetch('https://calendar-api-cedf.onrender.com/meet', {
-				body: formData,
-				method: 'post',
-				mode: 'cors',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-			});
-
-			console.log(res);
-			console.log(formData);
-		} catch (err) {
-			setSubmittedState(err?.message || 'Something went wrong');
-			setIsLoading(false);
-		} finally {
-			setIsLoading(false);
-		}
+	const handleSubmit = (e) => {
+		setIsLoading(true);
 	};
 	return (
 		<div className="contact mg-top-exlg" id="contact-us">
@@ -78,106 +58,47 @@ function ContactUs() {
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore,
 						ex.
 					</span>
-					<form action="" className="mg-top-lg">
+					<form
+						action="https://calendar-api-cedf.onrender.com/meet"
+						className="mg-top-lg"
+						method="post"
+					>
 						<div className="form-double">
 							<div className="form-item">
 								<label htmlFor="firstname">First Name</label>
-								<input
-									type="text"
-									name="firstname"
-									value={formData.first_name}
-									onChange={(e) =>
-										setFormData((prev) => {
-											return { ...prev, first_name: e.target.value };
-										})
-									}
-								/>
+								<input type="text" name="first_name" />
 							</div>
 							<div className="form-item">
 								<label htmlFor="lastname">Last Name</label>
-								<input
-									type="text"
-									name="lastname"
-									value={formData.last_name}
-									onChange={(e) =>
-										setFormData((prev) => {
-											return { ...prev, last_name: e.target.value };
-										})
-									}
-								/>
+								<input type="text" name="last_name" />
 							</div>
 						</div>
 						<div className="form-single">
 							<div className="form-item">
 								<label htmlFor="email">Email</label>
-								<input
-									type="email"
-									name="email"
-									value={formData.email}
-									onChange={(e) =>
-										setFormData((prev) => {
-											return { ...prev, email: e.target.value };
-										})
-									}
-								/>
+								<input type="email" name="email" />
 							</div>
 						</div>
 						<div className="form-double">
 							<div className="form-item">
 								<label htmlFor="tel">Phone</label>
-								<input
-									type="tel"
-									name="tel"
-									value={formData.contact}
-									onChange={(e) =>
-										setFormData((prev) => {
-											return { ...prev, contact: e.target.value };
-										})
-									}
-								/>
+								<input type="tel" name="contact" />
 							</div>
 							<div className="form-item">
 								<label htmlFor="address">Address</label>
-								<input
-									type="text"
-									name="address"
-									value={formData.address}
-									onChange={(e) =>
-										setFormData((prev) => {
-											return { ...prev, address: e.target.value };
-										})
-									}
-								/>
+								<input type="text" name="address" />
 							</div>
 						</div>
 						<div className="form-single">
 							<div className="form-item">
 								<label htmlFor="datetime">Date And Time</label>
-								<input
-									type="datetime-local"
-									name="datetime"
-									value={formData.date}
-									onChange={(e) =>
-										setFormData((prev) => {
-											return { ...prev, date: e.target.value };
-										})
-									}
-								/>
+								<input type="datetime-local" name="date" />
 							</div>
 						</div>
 						<div className="form-single">
 							<div className="form-item">
 								<label htmlFor="message">Message</label>
-								<textarea
-									rows={5}
-									name="message"
-									value={formData.message}
-									onChange={(e) =>
-										setFormData((prev) => {
-											return { ...prev, message: e.target.value };
-										})
-									}
-								></textarea>
+								<textarea rows={5} name="message"></textarea>
 							</div>
 						</div>
 						<button
