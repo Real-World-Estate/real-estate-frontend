@@ -1,22 +1,11 @@
 import React from 'react';
 import Footer from '../components/Footer';
-import { image } from '../assets';
 import ContactUs from '../components/ContactUs';
 import { useParams } from 'react-router-dom';
 import { data } from '../assets/DATA/store';
 
-const picsArr = [
-	image.houseHeader,
-	image.housePic1,
-	image.housePic2,
-	image.housePic3,
-	image.housePic4,
-	image.housePic5,
-	image.housePic6,
-];
 function Properties() {
 	const params = useParams();
-	console.log(params);
 
 	const property = data.filter((dt) => dt.id === params.propertyID)[0];
 	const statsProp = Object.entries(property.statistics);
@@ -53,7 +42,7 @@ function Properties() {
 				<h3 className="primary">Overview</h3>
 				<div className="overview">
 					{statsProp.map((val, index) => (
-						<div className="item">
+						<div className="item" key={index}>
 							<span>
 								<b>{val[1]}</b>
 							</span>
