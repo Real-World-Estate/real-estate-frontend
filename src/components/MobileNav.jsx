@@ -13,19 +13,19 @@ function MobileNav({ isClose, setIsClose }) {
 					<img src={image.close} alt="The close btn" />
 				</button>
 				<div className="mobile-nav-items">
-					<a onClick={() => setIsClose(true)} href={'#home'}>
+					<a onClick={() => setIsClose(true)} href={'/#home'}>
 						Home
 					</a>
-					<a onClick={() => setIsClose(true)} href={'#about'}>
+					<a onClick={() => setIsClose(true)} href={'/#about'}>
 						About
 					</a>
-					<a onClick={() => setIsClose(true)} href={'#services'}>
+					<a onClick={() => setIsClose(true)} href={'/#services'}>
 						Services
 					</a>
-					<a onClick={() => setIsClose(true)} href={'#blog'}>
+					<a onClick={() => setIsClose(true)} href={'/#blog'}>
 						Blog
 					</a>
-					<a onClick={() => setIsClose(true)} href={'#testimonials'}>
+					<a onClick={() => setIsClose(true)} href={'/#testimonials'}>
 						Testimonials
 					</a>
 					<Button

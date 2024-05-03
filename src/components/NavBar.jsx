@@ -7,11 +7,11 @@ function NavBar({ isClose, setIsClose }) {
 		<nav className="nav">
 			<img src={appLogo.logo_cut} className="logo" alt={'Application Logo'} />
 			<div className="nav-items res">
-				<a href={'#home'}>Home</a>
-				<a href={'#about'}>About</a>
-				<a href={'#services'}>Services</a>
-				<a href={'#blog'}>Blog</a>
-				<a href={'#testimonials'}>Testimonials</a>
+				<a href={'/#home'}>Home</a>
+				<a href={'/#about'}>About</a>
+				<a href={'/#services'}>Services</a>
+				<a href={'/#blog'}>Blog</a>
+				<a href={'/#testimonials'}>Testimonials</a>
 			</div>
 			<Button
 				STYLE="res"
