@@ -1,0 +1,102 @@
+@use './variables.scss' as *;
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+	font-family: Poppins;
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.6rem;
+	margin: 0;
+	padding: 0;
+	background-color: #f0fefe;
+}
+
+.logo {
+	height: 10rem;
+}
+@media only screen and (max-width: 750px) {
+	.logo {
+		height: 7rem;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $color-dark;
+
+	&.active {
+		color: $color-dark;
+	}
+}
+
+.btn {
+	padding: 1.5rem 2rem;
+	font-family: 'Courier New', Courier, monospace;
+	border: none;
+	border-radius: 0.6rem;
+	color: $color-white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 15rem;
+
+	a {
+		color: $color-white;
+
+		img {
+			height: 4rem;
+			width: 4rem;
+		}
+	}
+
+	&-primary {
+		background-color: $color-primary;
+	}
+	&-secondary {
+		border: 0.2rem solid $color-primary;
+		// background-color: transparent;
+		color: $color-primary;
+	}
+
+	&-secondary-short {
+		width: 5rem;
+		height: 5rem;
+		background-color: white;
+	}
+
+	&.show {
+		opacity: 0;
+	}
+
+	@media only screen and (max-width: 600px) {
+		&.show {
+			opacity: 1;
+		}
+	}
+}
+
+.caps {
+	text-transform: capitalize;
+}
+
+.bold {
+	font-weight: bold;
+}
+.mg-top {
+	margin-top: 3rem;
+	&-lg {
+		margin-top: 5rem;
+	}
+	&-exlg {
+		margin-top: 8rem;
+	}
+}
+
+.full-width {
+	width: 100%;
+}
